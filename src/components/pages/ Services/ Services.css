@@ -1,0 +1,98 @@
+.serCard{
+    width: 50%;
+    float: left;
+    /*overflow: hidden;*/
+}
+.clear{
+    clear: both;
+}
+figure>img {
+    transition: 0.8s;
+    /*z-index: 1;*/
+}
+figure{
+    position: relative;
+    margin: -5px 0 !important;
+}
+/*figure:hover img{*/
+/*    filter: grayscale(200%);*/
+/*    !*transform: scale(1.1);*!*/
+
+/*}*/
+.ReactModal__Content{
+    z-index: 99999999999999999999;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: #AEAEAE !important;
+}
+
+.service-name{
+    font-size: 40px;
+    font-weight: 700;
+}
+.service-content{
+    font-weight: 500 !important;
+}
+a{
+    text-decoration: none;
+}
+figcaption{
+    color: white;
+    height: 62.5%;
+    opacity: 0.4;
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+    z-index: -1;
+    position: absolute;
+    padding-top: 150px;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 55px !important;
+    font-weight: bold;
+
+
+}
+figure:hover figcaption{
+    z-index: 99;
+    transition: 0.7s;
+    background-color: black;
+    color: white !important;
+    /*filter: brightness(200);*/
+
+}
+@media screen and (max-width: 1350px){
+    figcaption{
+        padding-top: 45px;
+        top: 0;
+        font-size: 43px;
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    figcaption{
+        padding-top: 30px;
+        top: 0;
+        /*font-size: 24px;*/
+        height: 71%;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .serCard{
+        width: 100%;
+    }
+    figcaption{
+        padding-top: 30px;
+        top: 0;
+        font-size: 24px !important;
+        height: 75%;
+    }
+
+}
+
