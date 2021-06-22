@@ -40,12 +40,13 @@ const  Navbar = () => {
                                     <Link
                                         key={`key-${id}`}
                                         to={to}
+                                        className={"menu-scr"}
                                         // className={i === order ? 'active' : ''}
                                         // activeClass="active"
                                         spy={true}
                                         smooth={true}
-                                        duration={500}
-                                        offset={-50}
+                                        duration={2000}
+                                        offset={-85}
                                         onClick={() => closeMobileMenu()}
                                     >
                                         {title}

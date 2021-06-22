@@ -19,16 +19,23 @@ figure{
 /*    !*transform: scale(1.1);*!*/
 
 /*}*/
+.ReactModal__Overlay{
+    background-color: rgba(255,255,255,0) !important;
+}
 .ReactModal__Content{
+    background-color: rgba(255,255,255,1) !important;
+    /*opacity: 1;*/
+    position: relative;
+    /*padding: 100px;*/
     z-index: 99999999999999999999;
     width: 80vw;
     height: 80vh;
     margin: 0 auto;
-    background-color: #AEAEAE !important;
+    /*background-color: #AEAEAE !important;*/
 }
 
 .service-name{
-    font-size: 40px;
+    font-size: 70px;
     font-weight: 700;
 }
 .service-content{
@@ -36,6 +43,21 @@ figure{
 }
 a{
     text-decoration: none;
+}
+.modal-img{
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    filter: grayscale(200);
+}
+.modalDiv{
+    width: 50%;
+    position: absolute;
+    /*margin-top: -50vh;*/
+    z-index: 999999;
+    left: 5%;
+    /*left: 60px;*/
+    /*right: auto;*/
 }
 figcaption{
     color: white;

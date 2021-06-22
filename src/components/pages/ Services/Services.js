@@ -3,6 +3,7 @@ import './ Services.css';
 import {Link} from 'react-router-dom';
 import {serviceData} from "../../data";
 import Modal from "react-modal";
+import * as url from "url";
 // import imgChef from "./../../../images/members/unnamed.png";
 Modal.setAppElement('#root')
 
@@ -20,6 +21,7 @@ const Services = () => {
 //     const sectionStyle = {
 //         backgroundImage: "url(" + { imgChef } + ")"
 // }
+
     return (
         <div id="services" className='services'>
             <div className="sec-container">
@@ -41,19 +43,24 @@ const Services = () => {
                             </div>
                         ))
                     }
-                    <Modal  isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-                        <p className="service-name">{serData?.title}</p>
-                        <h2 className="service-content">{serData?.name}</h2>
-                        <ul>
-                                {serData?.li.map((li) =>(
-                                    <li key={li.id}>
-                                        {li.li}
-                                    </li>
-                                ))}
-                        </ul>
-                        <button onClick={() => setModalIsOpen(false)}>
-                            close
-                        </button>
+                    <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+                            <img className="modal-img" src={serData?.img} alt=""/>
+                            <div className="modalDiv">
+                                <p className="service-name">{serData?.title}</p>
+                                <h2 className="service-content">{serData?.name}</h2>
+                                <ul>
+                                    {serData?.li.map((li) =>(
+                                        <li key={li.id}>
+                                            {li.li}
+                                        </li>
+                                    ))}
+                                </ul>
+                                <button onClick={() => setModalIsOpen(false)}>
+                                    close
+                                </button>
+                            </div>
+
+
                     </Modal>
                 </div>
             </div>

@@ -85,7 +85,10 @@ img{
 
 
 /*==========  menu animation start  ================*/
-
+.menu-scr{
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
 .nav-menu{
 
 
